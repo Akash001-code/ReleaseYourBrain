@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    tools:context=".FinalActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alfa_slab_one"
+        android:paddingLeft="80dp"
+        android:paddingTop="10dp"
+        android:text="Final Results"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"></TextView>
+
+    <TextView
+        android:id="@+id/congrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/berkshire_swash"
+        android:paddingLeft="70dp"
+        android:paddingTop="5dp"
+        android:text="Congratulations!!"
+        android:textColor="#FFEB3B"
+        android:textSize="35dp"></TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/cup"
+        android:paddingLeft="120dp"
+        />
+
+    <TextView
+        android:id="@+id/wp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:paddingLeft="120dp"
+        android:paddingTop="10dp"
+        android:text="Well Played..."
+        android:textColor="#FF9800"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp">
+
+            <ProgressBar
+                android:id="@+id/pbcorrect"
+                style="?android:progressBarStyleHorizontal"
+                android:layout_width="90dp"
+                android:layout_height="93dp"
+                android:layout_centerInParent="true"
+                android:progressDrawable="@drawable/correct"
+                android:progress="80"
+
+                />
+
+            <TextView
+                android:id="@+id/correctvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="70"
+                android:textSize="25dp"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp">
+
+            <ProgressBar
+                android:id="@+id/pbscore"
+                style="?android:progressBarStyleHorizontal"
+                android:layout_width="90dp"
+                android:layout_height="93dp"
+                android:maxHeight="150dp"
+                android:maxWidth="150dp"
+                android:layout_centerInParent="true"
+                android:progressDrawable="@drawable/score"
+                android:progress="80"
+
+                />
+
+            <TextView
+                android:id="@+id/scorevalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="70"
+                android:textSize="25dp"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp">
+
+            <ProgressBar
+                android:id="@+id/pbwrong"
+                style="?android:progressBarStyleHorizontal"
+                android:layout_width="90dp"
+                android:layout_height="93dp"
+                android:layout_centerInParent="true"
+                android:progressDrawable="@drawable/wrong"
+                android:progress="80"
+
+                />
+
+            <TextView
+                android:id="@+id/wrongvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="70"
+                android:textSize="25dp"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct"
+            android:textStyle="italic|bold"
+            android:textColor="#3AF41A"
+            android:textSize="25dp"
+            android:paddingLeft="28dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textStyle="italic|bold"
+            android:textColor="#F4C51A"
+            android:textSize="25dp"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wrong"
+            android:textStyle="italic|bold"
+            android:textColor="#EC1D0E"
+            android:textSize="28dp"
+            android:paddingLeft="50dp"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/playagain"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="PLAY AGAIN"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/carter_one"
+            android:textSize="20dp"
+            android:background="#6EE13C"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="MAIN MENU"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/carter_one"
+            android:textSize="20dp"
+            android:background="#F1170E"
+            android:layout_marginLeft="40dp"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
